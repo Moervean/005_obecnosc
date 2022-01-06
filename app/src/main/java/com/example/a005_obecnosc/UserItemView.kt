@@ -23,7 +23,7 @@ class UserItemView @JvmOverloads constructor(
 
     fun assign(name: String, status: String){
         binding?.nameTV?.text = name
-        if ( status == "offline")
+        if ( status == Status.OFFLINE.name)
             binding?.statusImage?.setBackgroundResource(android.R.drawable.presence_busy)
         else
             binding?.statusImage?.setBackgroundResource(android.R.drawable.presence_online)

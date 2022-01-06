@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".button_activity"
+    tools:context=".ButtonActivity"
     android:orientation="vertical"
     android:background="@color/white">
 
     <TextView
-        android:id="@+id/yourStatusTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -27,7 +29,7 @@
         android:paddingBottom="10dp">
 
         <TextView
-            android:id="@+id/nameTV"
+            android:id="@+id/name"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:textSize="20sp"
@@ -38,11 +40,11 @@
             tools:text="aaa" />
 
         <ImageView
-            android:id="@+id/statusImage"
+            android:id="@+id/yourStatus"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginRight="20dp"
-            tools:background="@android:drawable/presence_busy" />
+            android:background="@android:drawable/presence_busy"
+            android:layout_marginRight="20dp"/>
     </LinearLayout>
 
     <TextView
@@ -62,13 +64,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+
+
+
+</LinearLayout>
     <Button
         android:id="@+id/changeStatusButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:text="Zmień status"
-        android:backgroundTint="@color/red"/>
-
-
-</LinearLayout>
+        android:backgroundTint="@color/red"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

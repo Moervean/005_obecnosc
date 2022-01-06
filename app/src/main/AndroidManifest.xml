@@ -22,10 +22,10 @@
         </receiver>
 
         <activity
-            android:name=".button_activity"
+            android:name=".ButtonActivity"
             android:exported="true" />
         <activity
-            android:name=".register_activity"
+            android:name=".RegisterActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
